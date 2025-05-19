@@ -1,0 +1,10 @@
+:root {
+  --limestone-dust: #f5f2eb;
+  --mesquite-shade: #6a7752;
+  --charcoal-soil: #2e2b28;
+}
+h1,
+h2,
+p {
+  margin: 0;
+}
