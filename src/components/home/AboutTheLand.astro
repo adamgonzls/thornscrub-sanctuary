@@ -1,0 +1,68 @@
+---
+import { Image } from "astro:assets"
+import lizardSmiling from "../../images/lizard-smiling-373w.png"
+---
+
+<section>
+  <div class="container">
+    <h2>About the Land</h2>
+    <p>
+      In South Texas, the problem of habitat destruction is especially bad. At
+      Thornscrub Sanctuary, we protect and cultivate native plants for habitat
+      restoration on over 150 acres of undisturbed habitat. We work to educate
+      the public on native plant diversity. Some words about what makes this
+      biome special.
+    </p>
+    <div class="gallery">
+      <Image
+        class="gallery__image"
+        src={lizardSmiling}
+        alt="A cactus with purple flowers"
+      />
+      <Image
+        class="gallery__image"
+        src={lizardSmiling}
+        alt="A cactus with purple flowers"
+      />
+      <Image
+        class="gallery__image"
+        src={lizardSmiling}
+        alt="A cactus with purple flowers"
+      />
+    </div>
+  </div>
+</section>
+
+<style>
+  section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    color: var(--limestone-dust);
+    background-color: var(--charcoal-soil);
+  }
+  h2 {
+    text-align: center;
+  }
+  p {
+    margin-top: 21px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    max-width: 972px;
+  }
+  .container {
+    max-width: 1200px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .gallery {
+    margin-top: 21px;
+    display: flex;
+    column-gap: 1rem;
+  }
+  .gallery__image {
+    flex: 1 1 auto;
+    object-fit: cover;
+    width: calc((100% - 2rem) / 3);
+  }
+</style>
