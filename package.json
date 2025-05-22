@@ -9,6 +9,7 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@fontsource/alegreya-sc": "^5.2.5",
     "astro": "^5.7.13"
   }
 }
