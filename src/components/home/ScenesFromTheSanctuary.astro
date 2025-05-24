@@ -1,27 +1,32 @@
 ---
 import { Image } from "astro:assets"
 import lizardSmiling from "../../images/lizard-smiling-373w.png"
+import { scenesContent } from "@data/vars"
 ---
 
-<section>
-  <div class="container container--text-center">
-    <h2>Scenes from the Sanctuary</h2>
-    <div class="gallery">
-      <Image
-        class="gallery__image"
-        src={lizardSmiling}
-        alt="A cactus with purple flowers"
-      />
-      <Image
-        class="gallery__image"
-        src={lizardSmiling}
-        alt="A cactus with purple flowers"
-      />
-      <Image
-        class="gallery__image"
-        src={lizardSmiling}
-        alt="A cactus with purple flowers"
-      />
+<section id="scenesFromTheSanctuary">
+  <div class="container">
+    <h2 class="text--center">Scenes from the Sanctuary</h2>
+    <div class="gallery--grid">
+      {
+        scenesContent.map((scene) => (
+          <div>
+            <div class="gallery__image-container">
+              <Image
+                class="gallery__image"
+                src={scene.imageUrl}
+                alt={scene.title}
+                width="358"
+                height="268"
+              />
+              {scene.title.trim() !== "" && (
+                <span class="gallery__title">{scene.title}</span>
+              )}
+            </div>
+            <p>{scene.description}</p>
+          </div>
+        ))
+      }
     </div>
   </div>
 </section>
@@ -31,14 +36,35 @@ import lizardSmiling from "../../images/lizard-smiling-373w.png"
     padding-top: 50px;
     padding-bottom: 50px;
   }
-  .gallery {
-    margin-top: 21px;
+  .gallery--grid {
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    max-width: 100%;
+  }
+  .gallery__item {
     display: flex;
-    column-gap: 1rem;
+    flex-direction: column;
   }
   .gallery__image {
-    flex: 1 1 auto;
+    width: 100%;
+    aspect-ratio: 4 / 3; /* or whatever ratio you want */
     object-fit: cover;
-    width: calc((100% - 2rem) / 3);
+    display: block;
+    border-radius: 4px;
+  }
+  .gallery__image-container {
+    position: relative;
+  }
+  .gallery__title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: var(--limestone-dust);
+    padding: 0.5rem;
+    font-weight: bold;
   }
 </style>
