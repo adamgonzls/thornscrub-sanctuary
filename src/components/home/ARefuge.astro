@@ -1,3 +1,7 @@
+---
+import { aRefuge } from "@data/vars"
+---
+
 <section>
   <div class="container container--text-center">
     <h2>A Refuge for the Overlooked Wilds of Texas</h2>
@@ -6,6 +10,20 @@
       life. A long-haul project of restoration, respect, and native plant
       reverence.
     </p>
+    <div class="row">
+      {
+        aRefuge.map((paragraph) => (
+          <div class="row__item">
+            <h3>{paragraph.header}</h3>
+            <ul>
+              {paragraph.bulletPoints.map((item) => (
+                <li>{item}</li>
+              ))}
+            </ul>
+          </div>
+        ))
+      }
+    </div>
   </div>
 </section>
 
@@ -18,5 +36,19 @@
   }
   p {
     margin-top: 21px;
+  }
+  ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  .row {
+    display: flex;
+    gap: 1rem;
+    margin-top: 21px;
+  }
+  .row__item {
+    flex: 1;
+    color: var(--charcoal-shade);
+    background-color: var(--limestone-dust);
   }
 </style>
