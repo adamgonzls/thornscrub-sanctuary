@@ -1,6 +1,7 @@
 ---
 import { Image } from "astro:assets"
 import lizardSmiling from "../../images/lizard-smiling-373w.png"
+import { aboutTheLandImages } from "@data/vars"
 ---
 
 <section>
@@ -14,21 +15,17 @@ import lizardSmiling from "../../images/lizard-smiling-373w.png"
       biome special.
     </p>
     <div class="gallery">
-      <Image
-        class="gallery__image"
-        src={lizardSmiling}
-        alt="A cactus with purple flowers"
-      />
-      <Image
-        class="gallery__image"
-        src={lizardSmiling}
-        alt="A cactus with purple flowers"
-      />
-      <Image
-        class="gallery__image"
-        src={lizardSmiling}
-        alt="A cactus with purple flowers"
-      />
+      {}{
+        aboutTheLandImages.map((image) => (
+          <Image
+            class="gallery__image"
+            src={image.imageUrl}
+            alt={image.altText}
+            width="373"
+            height="280"
+          />
+        ))
+      }
     </div>
   </div>
 </section>
