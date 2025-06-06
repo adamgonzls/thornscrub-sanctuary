@@ -73,14 +73,22 @@ export const aboutTheLandImages = [
 export const aRefuge = [
   {
     header: "Protecting the Land",
-    bulletPoints: ["native plants", "restoring balance"],
+    bulletPoints: ["native plants", "restoring balance", "removing invasives"],
   },
   {
-    header: "Quiet Human Presence",
-    bulletPoints: ["visits", "off-grid structures", "reflection"],
+    header: "Being Here, Lightly",
+    bulletPoints: [
+      "fieldwork",
+      "off-grid structures",
+      "Observation without interference",
+    ],
   },
   {
     header: "For Future Generations",
-    bulletPoints: ["sustainability", "patience", "hands-on care"],
+    bulletPoints: [
+      "long-term land care",
+      "seed collection & replanting",
+      "persistent stewardship",
+    ],
   },
 ]
