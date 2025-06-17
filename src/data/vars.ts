@@ -76,10 +76,10 @@ export const aRefuge = [
     bulletPoints: ["native plants", "restoring balance", "removing invasives"],
   },
   {
-    header: "Being Here, Lightly",
+    header: "Here to Tend, Not Take",
     bulletPoints: [
       "fieldwork",
-      "off-grid structures",
+      "hands-on restoration",
       "Observation without interference",
     ],
   },
