@@ -4,7 +4,7 @@ import { aRefuge } from "@data/vars"
 
 <section>
   <div class="container container--text-center">
-    <h2>A Refuge for the Overlooked Wilds of Texas</h2>
+    <h2>Our Vision: A Refuge for the Overlooked Wilds of Texas</h2>
     <p>
       A land sanctuary in the South Texas thornscrub — raw, quiet, and full of
       life. A long-haul project of restoration, respect, and native plant
@@ -34,20 +34,42 @@ import { aRefuge } from "@data/vars"
     background-color: var(--mesquite-leaf);
     color: var(--limestone-dust);
   }
+  h2 {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  h3 {
+    max-width: 326px;
+    font-weight: bold;
+    margin-left: auto;
+    margin-right: auto;
+  }
   p {
     margin-top: 21px;
+    font-size: 24px;
   }
   ul {
+    margin-top: 10px;
+    margin-bottom: 0;
     list-style-type: none;
     padding-left: 0;
   }
   .row {
     display: flex;
     gap: 1rem;
-    margin-top: 21px;
+    margin-top: 31px;
+    flex-direction: column;
+  }
+  @media screen and (min-width: 600px) {
+    .row {
+      flex-direction: row;
+    }
   }
   .row__item {
     flex: 1;
+    border-radius: 28px;
+    padding: 20px;
     color: var(--charcoal-shade);
     background-color: var(--limestone-dust);
   }
