@@ -16,7 +16,7 @@ import { scenesContent } from "@data/vars"
                 class="gallery__image"
                 src={scene.imageUrl}
                 alt={scene.scientificName}
-                width="358"
+                width="716"
                 height="268"
               />
               <div class="gallery__title-container">
@@ -28,7 +28,7 @@ import { scenesContent } from "@data/vars"
                 )}
               </div>
             </div>
-            <p>{scene.description}</p>
+            <p class="source-sans-3">{scene.description}</p>
           </div>
         ))
       }
@@ -47,6 +47,16 @@ import { scenesContent } from "@data/vars"
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
     max-width: 100%;
+  }
+  @media screen and (max-width: 750px) {
+    .gallery--grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  @media screen and (max-width: 500px) {
+    .gallery--grid {
+      grid-template-columns: repeat(1, 1fr);
+    }
   }
   .gallery__item {
     display: flex;
