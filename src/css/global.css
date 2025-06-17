@@ -5,8 +5,17 @@
 }
 h1,
 h2,
+h3,
 p {
   margin: 0;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 24px;
 }
 
 a {
@@ -32,4 +41,8 @@ a {
 .alegreya-sc--400 {
   font-family: "Alegreya SC", serif;
   font-weight: 400;
+}
+
+.source-sans-3 {
+  font-family: "Source Sans 3 Variable", sans-serif;
 }
