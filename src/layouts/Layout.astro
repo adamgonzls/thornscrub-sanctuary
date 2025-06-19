@@ -19,6 +19,22 @@ import "../css/global.css"
       content="The Thornscrub Sanctuary"
     />
     <link rel="manifest" href="/site.webmanifest" />
+    <!-- gtag -->
+    <!-- Google tag (gtag.js) -->
+    <script
+      is:inline
+      type="text/partytown"
+      src="https://www.googletagmanager.com/gtag/js?id=G-EF0BN41BFP"></script>
+    <script is:inline type="text/partytown">
+      window.dataLayer = window.dataLayer || []
+      function gtag() {
+        dataLayer.push(arguments)
+      }
+      gtag("js", new Date())
+
+      gtag("config", "G-EF0BN41BFP")
+    </script>
+    <!-- end gtag -->
     <meta name="generator" content={Astro.generator} />
     <title>Thornscrub Sanctuary</title>
   </head>
@@ -30,6 +46,9 @@ import "../css/global.css"
 </html>
 
 <style>
+  html {
+    scroll-behavior: smooth;
+  }
   html,
   body {
     margin: 0;
