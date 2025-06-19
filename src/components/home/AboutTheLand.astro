@@ -1,0 +1,77 @@
+---
+import { Image } from "astro:assets"
+import { aboutTheLandImages } from "@data/vars"
+---
+
+<section id="aboutTheLand">
+  <div class="container">
+    <h2>About the Land</h2>
+    <p>
+      In South Texas, the problem of habitat destruction is especially bad. At
+      Thornscrub Sanctuary, we protect and cultivate native plants for habitat
+      restoration on over 150 acres of undisturbed habitat. We work to educate
+      the public on native plant diversity.
+    </p>
+    <div class="gallery">
+      {
+        aboutTheLandImages.map((image) => (
+          <Image
+            class="gallery__image"
+            src={image.imageUrl}
+            alt={image.altText}
+            width="746"
+            height="280"
+          />
+        ))
+      }
+    </div>
+  </div>
+</section>
+
+<style>
+  section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    color: var(--limestone-dust);
+    background-color: var(--charcoal-shade);
+  }
+  h2 {
+    text-align: center;
+  }
+  p {
+    margin-top: 21px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    max-width: 972px;
+    font-size: 24px;
+  }
+  .container {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1200px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .gallery {
+    margin-top: 31px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+  }
+  @media screen and (min-width: 700px) {
+    .gallery {
+      flex-direction: row;
+      column-gap: 1rem;
+    }
+    .gallery__image {
+      flex: 1 1 auto;
+      min-width: 0;
+    }
+  }
+  .gallery__image {
+    width: 100%;
+    object-fit: cover;
+    aspect-ratio: 4/3;
+  }
+</style>

@@ -1,0 +1,93 @@
+---
+import { Image } from "astro:assets"
+import lizardSmiling from "../../images/lizard-smiling-373w.png"
+import { scenesContent } from "@data/vars"
+---
+
+<section id="scenesFromTheSanctuary">
+  <div class="container">
+    <h2 class="text--center">Scenes from the Sanctuary</h2>
+    <div class="gallery--grid">
+      {
+        scenesContent.map((scene) => (
+          <div>
+            <div class="gallery__image-container">
+              <Image
+                class="gallery__image"
+                src={scene.imageUrl}
+                alt={scene.scientificName}
+                width="716"
+                height="268"
+              />
+              <div class="gallery__title-container">
+                {scene.commonName.trim() !== "" && (
+                  <span class="gallery__title">{scene.commonName}</span>
+                )}
+                {scene.scientificName.trim() !== "" && (
+                  <span class="gallery__title">{scene.scientificName}</span>
+                )}
+              </div>
+            </div>
+            <p class="gallery__description source-sans-3">
+              {scene.description}
+            </p>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>
+
+<style>
+  section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .gallery--grid {
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    max-width: 100%;
+  }
+  @media screen and (max-width: 750px) {
+    .gallery--grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  @media screen and (max-width: 500px) {
+    .gallery--grid {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  .gallery__item {
+    display: flex;
+    flex-direction: column;
+  }
+  .gallery__image {
+    width: 100%;
+    aspect-ratio: 4 / 3; /* or whatever ratio you want */
+    object-fit: cover;
+    display: block;
+    border-radius: 4px;
+  }
+  .gallery__image-container {
+    position: relative;
+  }
+  .gallery__description {
+    margin-top: 0.25rem;
+  }
+  .gallery__title {
+    display: block;
+    font-weight: bold;
+  }
+  .gallery__title-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: var(--limestone-dust);
+    padding: 0.5rem;
+  }
+</style>

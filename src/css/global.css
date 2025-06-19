@@ -1,0 +1,48 @@
+:root {
+  --limestone-dust: #f5f2eb;
+  --mesquite-leaf: #6a7752;
+  --charcoal-shade: #2e2b28;
+}
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1200px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.container--text-center {
+  text-align: center;
+}
+
+.text--center {
+  text-align: center;
+}
+
+.alegreya-sc--400 {
+  font-family: "Alegreya SC", serif;
+  font-weight: 400;
+}
+
+.source-sans-3 {
+  font-family: "Source Sans 3 Variable", sans-serif;
+}
