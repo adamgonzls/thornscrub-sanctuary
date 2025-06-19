@@ -28,7 +28,9 @@ import { scenesContent } from "@data/vars"
                 )}
               </div>
             </div>
-            <p class="source-sans-3">{scene.description}</p>
+            <p class="gallery__description source-sans-3">
+              {scene.description}
+            </p>
           </div>
         ))
       }
@@ -71,6 +73,9 @@ import { scenesContent } from "@data/vars"
   }
   .gallery__image-container {
     position: relative;
+  }
+  .gallery__description {
+    margin-top: 0.25rem;
   }
   .gallery__title {
     display: block;
