@@ -2,8 +2,8 @@ import CollaredLizard from "src/images/lizard-smiling-373w.png"
 import Peyote from "src/images/peyote-lophophora-williamsii.png"
 import PencilCactus from "src/images/pencil-cactus.png"
 import Sunset from "src/images/sunset-1000w.png"
-import GreenCactus from "src/images/green-cactus-w1000.png"
-import YellowFlower from "src/images/yellow-flower-w1000.png"
+import Echinocereus from "src/images/echinocereus-1000w.png"
+import Astrophytum from "src/images/astrophytum-1000w.png"
 import Frog from "src/images/frog-1000w.png"
 import SavingCactus from "src/images/saving-cactus-1000w.png"
 import PurpleFlower from "src/images/purple-cactus-2-1000w.png"
@@ -37,18 +37,18 @@ export const scenesContent = [
     imageUrl: Sunset,
   },
   {
-    commonName: "Some Common Name",
-    scientificName: "Some Scientific Name",
+    commonName: "",
+    scientificName: "Echinocereus enneacanthus",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    imageUrl: GreenCactus,
+      "Echinocereus enneacanthus, thrives in the harsh, sunbaked soil.",
+    imageUrl: Echinocereus,
   },
   {
-    commonName: "Some Common Name",
-    scientificName: "Some Scientific Name",
+    commonName: "Sea Urchin Cactus",
+    scientificName: "Astrophytum asterias",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    imageUrl: YellowFlower,
+      "Astrophytum is not native to the land though it occurs 20mi south. We are actively planting that species on the land, using seedlings grown from South Texas native seed, as a for of ex situ conservation.",
+    imageUrl: Astrophytum,
   },
 ]
 
