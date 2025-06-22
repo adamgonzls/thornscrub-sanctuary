@@ -47,7 +47,7 @@ export const scenesContent = [
     commonName: "Sea Urchin Cactus",
     scientificName: "Astrophytum asterias",
     description:
-      "Astrophytum is not native to the land though it occurs 20mi south. We are actively planting that species on the land, using seedlings grown from South Texas native seed, as a for of ex situ conservation.",
+      "Astrophytum is not native to the land though it occurs 20mi south. We are actively planting that species on the land, using seedlings grown from South Texas native seed, as a for of ex-situ conservation.",
     imageUrl: Astrophytum,
   },
 ]
