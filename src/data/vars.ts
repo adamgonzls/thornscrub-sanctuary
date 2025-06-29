@@ -80,7 +80,7 @@ export const aRefuge = [
     bulletPoints: [
       "fieldwork",
       "hands-on restoration",
-      "Observation without interference",
+      "Observation, Monitoring, Data Collection, Understanding",
     ],
   },
   {
