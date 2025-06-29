@@ -54,18 +54,15 @@ export const scenesContent = [
 
 export const aboutTheLandImages = [
   {
-    altText:
-      "This lizard is native to South Texas and northeastern Mexico, known for its intricate pattern and bright breeding colors. It thrives in the brushy, semiarid habitats of the Tamaulipan thornscrub",
+    altText: "Echinocereus enneacanthus",
     imageUrl: PurpleFlower,
   },
   {
-    altText:
-      "This lizard is native to South Texas and northeastern Mexico, known for its intricate pattern and bright breeding colors. It thrives in the brushy, semiarid habitats of the Tamaulipan thornscrub",
+    altText: "A frog",
     imageUrl: Frog,
   },
   {
-    altText:
-      "This lizard is native to South Texas and northeastern Mexico, known for its intricate pattern and bright breeding colors. It thrives in the brushy, semiarid habitats of the Tamaulipan thornscrub",
+    altText: "A man collects cactus in a bucket",
     imageUrl: SavingCactus,
   },
 ]

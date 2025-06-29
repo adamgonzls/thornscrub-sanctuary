@@ -6,7 +6,20 @@ import { aboutTheLandImages } from "@data/vars"
 <section id="aboutTheLand">
   <div class="container">
     <h2>About the Land</h2>
-    <p>
+    <div class="gallery">
+      {
+        aboutTheLandImages.map((image) => (
+          <Image
+            class="gallery__image"
+            src={image.imageUrl}
+            alt={image.altText}
+            width="746"
+            height="280"
+          />
+        ))
+      }
+    </div>
+    <p class="section__body">
       South Texas contains an unparalleled diversity of extremely unique and
       heat-tolerant plants found nowhere else in the United States. Sadly, this
       richness is both underappreciated by most who live here and understudied
@@ -24,19 +37,6 @@ import { aboutTheLandImages } from "@data/vars"
       Peyote, Texas Ebony, Guajillo, Blackbrush and the edible Coma comprise
       elements of the "living skin" of this unloved but beautiful landscape.
     </p>
-    <div class="gallery">
-      {
-        aboutTheLandImages.map((image) => (
-          <Image
-            class="gallery__image"
-            src={image.imageUrl}
-            alt={image.altText}
-            width="746"
-            height="280"
-          />
-        ))
-      }
-    </div>
   </div>
 </section>
 
@@ -51,12 +51,12 @@ import { aboutTheLandImages } from "@data/vars"
     text-align: center;
   }
   p {
-    margin-top: 21px;
+    /* margin-top: 21px;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
     max-width: 972px;
-    font-size: 24px;
+    font-size: 24px; */
   }
   .container {
     margin-right: auto;
@@ -82,6 +82,7 @@ import { aboutTheLandImages } from "@data/vars"
     }
   }
   .gallery__image {
+    border-radius: 4px;
     width: 100%;
     object-fit: cover;
     aspect-ratio: 4/3;

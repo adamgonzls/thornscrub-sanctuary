@@ -46,3 +46,11 @@ a {
 .source-sans-3 {
   font-family: "Source Sans 3 Variable", sans-serif;
 }
+
+.section__body {
+  text-align: center;
+  margin-top: 3rem;
+  font-size: 1.25rem;
+  font-family: "Source Sans 3 Variable", sans-serif;
+  line-height: 165%;
+}
