@@ -1,9 +1,16 @@
+---
+import { Image } from "astro:assets"
+import thornscrubLogo from "@images/thornscrub-logo-300w.png"
+---
+
 <header>
+  <a href="/">
+    <Image src={thornscrubLogo} alt="Thornscrub Sanctuary Logo" width="100" />
+  </a>
   <menu>
     <li><a href="#aboutTheLand">About The Land</a></li>
     <li><a href="#ourVision">Our Vision</a></li>
     <li><a href="#scenesFromTheSanctuary">Scenes from the Sanctuary</a></li>
-    <!-- <li><a href="/">Support</a></li> -->
     <li>
       <a
         href="https://www.bonfire.com/store/crime-pays-but-botany-doesnt/"
@@ -15,25 +22,32 @@
 
 <style>
   header {
-    color: var(--limestone-dust);
-    background-color: var(--mesquite-leaf);
+    max-width: 1200px;
+    background-color: var(--limestone-dust);
+    display: flex;
+    padding-left: 1.25em;
+    padding-right: 1.25em;
+    padding-top: 3.125em;
   }
   menu {
-    max-width: 1200px;
-    margin: 0 auto 0;
-    padding-top: 1em;
-    padding-bottom: 1em;
-    padding-left: 20px;
-    padding-right: 20px;
+    margin-top: 0;
+    margin-bottom: 0;
     display: flex;
     list-style-type: none;
     column-gap: 1em;
   }
   li {
     text-align: center;
+    display: flex;
+    align-items: center;
   }
   a {
     text-decoration: none;
     color: var(--limestone-dust);
+    color: var(--charcoal-shade);
+  }
+  .logo {
+    width: 100px;
+    height: auto;
   }
 </style>
