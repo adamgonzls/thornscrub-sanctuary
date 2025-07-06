@@ -1,3 +1,7 @@
+---
+import LogoYouTube from "@components/shared/LogoYouTube.astro"
+---
+
 <footer>
   <div class="container">
     <h2>Thornscrub Sanctuary</h2>
@@ -13,9 +17,10 @@
 
     <div>
       <h3>Follow Along:</h3>
+
       <a
         href="https://www.youtube.com/@CrimePaysButBotanyDoesnt"
-        target="_blank">YouTube: Crime Pays But Botany Doesn't</a
+        target="_blank"><LogoYouTube classes="social" /></a
       >
     </div>
     <p>
@@ -34,7 +39,7 @@
   .container {
     display: flex;
     flex-direction: column;
-    row-gap: 21px;
+    row-gap: 1.25em;
   }
   h3 {
     font-size: 20px;
