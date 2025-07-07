@@ -13,7 +13,7 @@ export const scenesContent = [
     commonName: "Reticulated Collared Lizard",
     scientificName: "Crotaphytus reticulatus",
     description:
-      "This lizard is native to South Texas and northeastern Mexico, known for its intricate pattern and bright breeding colors. It thrives in the brushy, semiarid habitats of the Tamaulipan thornscrub",
+      "This lizard is native to South Texas and northeastern Mexico, known for its intricate pattern and bright breeding colors. It thrives in the brushy, semiarid habitats of the Tamaulipan thornscrub.",
     imageUrl: CollaredLizard,
   },
   {
@@ -27,7 +27,7 @@ export const scenesContent = [
     commonName: "Pencil Cactus",
     scientificName: "Echinocereus poselgeri",
     description:
-      "A slender, sprawling cactus with narrow stems that resemble green pencils. It blooms with striking magenta flowers in spring and thrives in sandy, coastal scrublands",
+      "A slender, sprawling cactus with narrow stems that resemble green pencils. It blooms with striking magenta flowers in spring and thrives in sandy, coastal scrublands.",
     imageUrl: PencilCactus,
   },
   {
